@@ -51,7 +51,7 @@ const mockInstagramPosts = [
 ]
 
 const InstagramFeed = () => {
-  const [posts, setPosts] = useState(mockInstagramPosts)
+const posts = mockInstagramPosts
   const [isLoading, setIsLoading] = useState(true)
 
   useEffect(() => {
