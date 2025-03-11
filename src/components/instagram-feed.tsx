@@ -2,6 +2,7 @@
 
 import { useEffect, useState } from "react"
 import Image from "next/image"
+import Link from "next/link"
 
 // Mock Instagram data
 const mockInstagramPosts = [
@@ -75,7 +76,7 @@ const InstagramFeed = () => {
   return (
     <div className="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-6 gap-4">
       {posts.map((post) => (
-        <a
+        <Link
           key={post.id}
           href={post.url}
           target="_blank"
@@ -85,7 +86,7 @@ const InstagramFeed = () => {
           <div className="relative aspect-square">
             <Image src={post.imageUrl || "/placeholder.svg"} alt={post.caption} fill className="object-cover" />
           </div>
-        </a>
+        </Link>
       ))}
     </div>
   )
