@@ -9,6 +9,7 @@ export default function Contact() {
   return (
     <section id="contacto" className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-6xl mx-auto">
+        
         <h2 className="text-3xl font-bold text-center mb-12">Contacto</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
           <Card>
@@ -104,7 +105,7 @@ export default function Contact() {
               llamarnos por teléfono.
             </p>
             <div className="space-y-4 space-x-4">
-              <Button size="lg" className="w-full sm:w-auto gap-2" asChild>
+              <Button size="lg" className="w-full sm:w-auto gap-2 bg-[#25D366] hover:bg-[#128C7E] text-white dark:text-white" asChild>
                 <Link href="https://wa.me/34665817856" target="_blank" rel="noopener noreferrer">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"

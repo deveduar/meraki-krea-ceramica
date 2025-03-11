@@ -3,6 +3,7 @@ import { Badge } from "@/components/ui/badge"
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
 import GoogleMap from "@/components/google-map"
 import Link from "next/link"
+import Image from "next/image"
 
 export default function Location() {
   return (
@@ -10,9 +11,20 @@ export default function Location() {
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Nuestra Ubicación</h2>
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12">
+
           <div>
-            <Card>
-              <CardHeader>
+            <Card className="p-2">
+            <div className="relative w-full h-[300px]  rounded-lg overflow-hidden  ">
+              <Image
+                src="/hero-2.jpg"
+                alt="Merakikrea Cerámica taller"
+                fill
+                className="object-cover"
+                priority
+              />
+            </div>
+              <CardHeader className="">
+
                 <CardTitle className="flex items-center gap-2">
                   <MapPin className="h-5 w-5" /> Dirección
 
@@ -24,7 +36,7 @@ export default function Location() {
                       href="https://maps.app.goo.gl/TGVkspfT8CYTirZh8"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:bg-muted transition-colors"
                     >
                       C. Antonio Ponce, 5
                     </Link>
@@ -34,7 +46,7 @@ export default function Location() {
                       href="https://maps.app.goo.gl/TGVkspfT8CYTirZh8"
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="hover:text-secondary transition-colors"
+                      className="hover:bg-muted transition-colors"
                     >
                       21110 Aljaraque, Huelva, España
                     </Link>
@@ -43,7 +55,7 @@ export default function Location() {
               </CardHeader>
               <CardContent>
 
-                <div className="flex flex-col gap-3 mt-2">
+                <div className="flex flex-col gap-3 mt-2 pb-5">
                   <div className="flex flex-row gap-2 items-center">
                   <PersonStanding className="h-5 w-5" /> 
                   <h3 className="font-medium text-lg">Accesibilidad:</h3>

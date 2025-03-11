@@ -1,36 +1,69 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Merakikrea Cerámica - Landing Page
 
-## Getting Started
+Bienvenido al repositorio de la landing page de **Merakikrea Cerámica**. Este proyecto es una página web optimizada, inspirada en Google Perfil de Empresa, para mostrar información sobre la tienda, ubicación, redes sociales y contacto.
 
-First, run the development server:
+## Tecnologías Utilizadas
+- **Next.js** (Framework de React para aplicaciones web)
+- **TypeScript** (Tipado seguro para JavaScript)
+- **Tailwind CSS** (Estilos y modo claro/oscuro con variables)
+- **ShadCN UI** (Componentes accesibles y modernos)
+- **Framer Motion** (Animaciones suaves y atractivas)
+- **Google Maps API** (Para mostrar la ubicación)
+- **Instagram Feed API** (Para mostrar las últimas publicaciones)
+- **Vercel** (Hosting y despliegue)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Características Principales
+✅ **Diseño Responsivo** - Adaptado para móviles y escritorio.  
+✅ **Modo Claro/Oscuro** - Implementado con Tailwind CSS.  
+✅ **SEO y Accesibilidad** - Optimizado para motores de búsqueda y con etiquetas semánticas.  
+✅ **Secciones Claves**:
+- **Sobre Nosotros** - Información sobre la tienda y los cursos.
+- **Ubicación** - Integración con Google Maps.
+- **Instagram Feed** - Publicaciones recientes.
+- **Reseñas de Google** - Muestra opiniones de clientes.
+- **Contacto** - Botones para WhatsApp, correo y redes sociales.
+✅ **Botón flotante de WhatsApp** siempre visible.  
+✅ **Header y Footer** con navegación intuitiva.  
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Instalación y Configuración
+1. Clona el repositorio:
+   ```sh
+   git clone https://github.com/tuusuario/merakikrea-landing.git
+   ```
+2. Entra en el directorio:
+   ```sh
+   cd merakikrea-landing
+   ```
+3. Instala las dependencias:
+   ```sh
+   npm install
+   # o
+   yarn install
+   ```
+4. Inicia el entorno de desarrollo:
+   ```sh
+   npm run dev
+   # o
+   yarn dev
+   ```
+5. Abre [http://localhost:3000](http://localhost:3000) en tu navegador.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Despliegue
+Este proyecto está optimizado para Vercel. Para desplegarlo:
+1. Conecta el repositorio a [Vercel](https://vercel.com/).
+2. Realiza un `push` a `main` o `master`, y Vercel se encargará del despliegue automáticamente.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Contribución
+Si deseas mejorar la página, haz un **fork**, crea una rama y envía un **pull request**.
 
-## Learn More
+## Contacto
+📍 **Dirección:** C. Antonio Ponce, 5, 21110 Aljaraque, Huelva  
+📞 **Teléfono:** 665 71 68 58  
+💬 **WhatsApp:** [Chat en WhatsApp](https://wa.me/34665817856)  
+🌐 **Instagram:** [@merakikrea](https://www.instagram.com/merakikrea)  
+📘 **Facebook:** [Merakikrea](https://www.facebook.com/merakikrea)
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+🚀 **Merakikrea Cerámica - Creando con pasión y creatividad.**
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.

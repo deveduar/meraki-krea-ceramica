@@ -12,7 +12,11 @@ export default function InstagramSection() {
         </p>
         <InstagramFeed />
         <div className="text-center mt-8">
-          <Button variant="outline" size="lg" className="gap-2" asChild>
+        <Button 
+            size="lg" 
+            className="gap-2 bg-gradient-to-r from-[#D300C5] via-[#FF0069] to-[#FF7A00] hover:opacity-90 text-white" 
+            asChild
+          >
             <a href="https://www.instagram.com/merakikrea" target="_blank" rel="noopener noreferrer">
               <Instagram className="h-5 w-5" />
               <span>@merakikrea_ceramica</span>
