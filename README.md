@@ -56,12 +56,12 @@ Este proyecto está optimizado para Vercel. Para desplegarlo:
 ## Contribución
 Si deseas mejorar la página, haz un **fork**, crea una rama y envía un **pull request**.
 
-## Contacto
-📍 **Dirección:** C. Antonio Ponce, 5, 21110 Aljaraque, Huelva  
-📞 **Teléfono:** 665 71 68 58  
-💬 **WhatsApp:** [Chat en WhatsApp](https://wa.me/34665817856)  
-🌐 **Instagram:** [@merakikrea](https://www.instagram.com/merakikrea)  
-📘 **Facebook:** [Merakikrea](https://www.facebook.com/merakikrea)
+## Contacto del Desarrollador
+✉️ **Correo:** deveduar@gmail.com  
+🌐 **Portfolio:** [deveduar-portfolio.vercel.app](https://deveduar-portfolio.vercel.app/)  
+💼 **LinkedIn:** [linkedin.com/in/deveduar](http://www.linkedin.com/in/deveduar)  
+🐙 **GitHub:** [github.com/deveduar](https://github.com/deveduar)  
+🐦 **Twitter:** [twitter.com/deveduar](https://twitter.com/deveduar)  
 
 ---
 
