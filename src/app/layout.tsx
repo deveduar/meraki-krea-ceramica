@@ -21,8 +21,32 @@ export const metadata: Metadata = {
     "Huelva",
     "cursos de cerámica",
     "tienda de cerámica",
-  ]
-}
+  ],
+  openGraph: {
+    title: "Merakikrea Cerámica | Clases y Tienda de Cerámica",
+    description:
+      "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
+    url: "https://meraki-krea-ceramica-six.vercel.app/",
+    siteName: "Merakikrea Cerámica",
+    images: [
+      {
+        url: "https://meraki-krea-ceramica-six.vercel.app/imagen-meta.jpg",
+        width: 1200,
+        height: 630,
+        alt: "Merakikrea Cerámica - Clases y Tienda",
+      },
+    ],
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Merakikrea Cerámica | Clases y Tienda de Cerámica",
+    description:
+      "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
+    images: ["https://meraki-krea-ceramica-six.vercel.app/imagen-meta.jpg"],
+  },
+};
+
 
 export default function RootLayout({
   children,
