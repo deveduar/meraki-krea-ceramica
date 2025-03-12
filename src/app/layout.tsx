@@ -10,7 +10,7 @@ import Footer from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "Merakikrea Cerámica | Clases y Tienda de Cerámica en Aljaraque",
+  title: "Merakikrea Cerámica | Clases y Tienda de Cerámica en Aljaraque, Huelva",
   description:
     "Somos docentes profesionales con más de veinte años de experiencia y pasión por lo que hacemos. Ofrecemos cursos semanales, intensivos y monográficos de cerámica en Aljaraque, Huelva.",
   keywords: [
@@ -23,7 +23,7 @@ export const metadata: Metadata = {
     "tienda de cerámica",
   ],
   openGraph: {
-    title: "Merakikrea Cerámica | Clases y Tienda de Cerámica",
+    title: "Merakikrea Cerámica | Clases y Tienda de Cerámica en Aljaraque, Huelva",
     description:
       "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
     url: "https://meraki-krea-ceramica-six.vercel.app/",
@@ -44,6 +44,9 @@ export const metadata: Metadata = {
     description:
       "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
     images: ["https://meraki-krea-ceramica-six.vercel.app/imagen-meta.jpg"],
+  },
+  other: {
+    ["fb:app_id"]: "656846786839931",
   },
 };
 
