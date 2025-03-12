@@ -46,6 +46,14 @@ export const metadata: Metadata = {
       "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
     images: ["https://meraki-krea-ceramica-six.vercel.app/hero-1.jpg"],
   },
+  verification: {
+    google: 'Nqj1AO8l1Vy5HWfbVpvOsx--E7EKTku-mDOtWjcwXfU',
+    yandex: 'yandex',
+    yahoo: 'yahoo',
+    other: {
+      me: ['my-email', 'my-link'],
+    },
+  },
 };
 
 
