@@ -46,7 +46,7 @@ export const metadata: Metadata = {
     images: ["https://meraki-krea-ceramica-six.vercel.app/hero-1.jpg"],
   },
   other: {
-    ["fb:app_id"]: "656846786839931",
+    ["fb:app_id"]: "2087657141752058",
   },
 };
 
