@@ -39,13 +39,13 @@ export const metadata: Metadata = {
     ],
     type: "website",
   },
-  twitter: {
-    card: "summary_large_image",
-    title: "Merakikrea Cerámica | Clases y Tienda de Cerámica",
-    description:
-      "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
-    images: ["https://meraki-krea-ceramica-six.vercel.app/hero-1.jpg"],
-  },
+  // twitter: {
+  //   card: "summary_large_image",
+  //   title: "Merakikrea Cerámica | Clases y Tienda de Cerámica",
+  //   description:
+  //     "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
+  //   images: ["https://meraki-krea-ceramica-six.vercel.app/hero-1.jpg"],
+  // },
   verification: {
     google: 'Nqj1AO8l1Vy5HWfbVpvOsx--E7EKTku-mDOtWjcwXfU',
     yandex: 'yandex',
@@ -67,8 +67,11 @@ export default function RootLayout({
       
         <body className={inter.className}>
         <Head>
-        <meta key="fb-app-id" property="fb:app_id" content="2087657141752058" />
-      </Head>
+          <meta key="fb-app-id" property="fb:app_id" content="2087657141752058" />
+          <link rel="manifest" href="/site.webmanifest" />
+          <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png" />
+          <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png" />
+        </Head>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
           {children}
