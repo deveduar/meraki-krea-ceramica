@@ -1,6 +1,6 @@
 "use client"
 
-import { useState, useEffect } from "react"
+import { useState, useEffect, useRef } from "react"
 import Link from "next/link"
 import { Button } from "@/components/ui/button"
 import { ModeToggle } from "@/components/mode-toggle"
@@ -12,6 +12,9 @@ const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
   const [isScrolled, setIsScrolled] = useState(false)
   const pathname = usePathname()
+  const menuRef = useRef<HTMLDivElement>(null)
+  const buttonRef = useRef<HTMLButtonElement>(null)
+
 
   const navItems = [
     { name: "Inicio", href: "/" },
@@ -21,6 +24,22 @@ const Header = () => {
     { name: "Opiniones", href: "/#opiniones" },
     { name: "Contacto", href: "/#contacto" },
   ]
+
+  useEffect(() => {
+    const handleClickOutside = (event: MouseEvent) => {
+      if (
+        menuRef.current &&
+        !menuRef.current.contains(event.target as Node) &&
+        buttonRef.current &&
+        !buttonRef.current.contains(event.target as Node)
+      ) {
+        setIsMenuOpen(false)
+      }
+    }
+
+    document.addEventListener("mousedown", handleClickOutside)
+    return () => document.removeEventListener("mousedown", handleClickOutside)
+  }, [])
 
   useEffect(() => {
     const handleScroll = () => {
@@ -74,6 +93,7 @@ const Header = () => {
         <div className="flex items-center md:hidden">
           <ModeToggle />
           <Button
+            ref={buttonRef}
             variant="ghost"
             size="icon"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
@@ -86,10 +106,11 @@ const Header = () => {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-background/95 backdrop-blur-md shadow-md">
+        <div ref={menuRef}  className="md:hidden bg-background/95 backdrop-blur-md shadow-md">
           <nav className="container mx-auto px-4 py-4 flex flex-col space-y-2">
             {navItems.map((item) => (
-              <Button key={item.name} variant="ghost" className="justify-start" asChild>
+              <Button key={item.name} 
+              onClick={() => setIsMenuOpen(false)}variant="ghost" className="justify-start" asChild>
                 <Link href={item.href}>{item.name}</Link>
               </Button>
             ))}
