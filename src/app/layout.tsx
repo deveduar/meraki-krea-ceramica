@@ -66,7 +66,7 @@ export default function RootLayout({
     <html lang="es">
         <Head>
           <meta key="fb-app-id" property="fb:app_id" content="2087657141752058" />
-          <link rel="manifest" href="/site.webmanifest" />
+          {/* <link rel="manifest" href="/site.webmanifest" /> */}
           <meta name="apple-mobile-web-app-title" content="Merakikrea" />
           {/* <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png" />
           <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png" />
