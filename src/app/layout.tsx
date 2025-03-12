@@ -64,8 +64,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      
-        <body className={inter.className}>
         <Head>
           <meta key="fb-app-id" property="fb:app_id" content="2087657141752058" />
           <link rel="manifest" href="/site.webmanifest" />
@@ -74,6 +72,8 @@ export default function RootLayout({
           <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png"/>
           <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/>
         </Head>
+        <body className={inter.className}>
+
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
           {children}
