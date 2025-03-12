@@ -6,8 +6,8 @@ export default function AboutUs() {
     <section id="nosotros" className="py-16 px-4 sm:px-6 lg:px-8 bg-background">
       <div className="max-w-6xl mx-auto">
         <h2 className="text-3xl font-bold text-center mb-12">Sobre Nosotros</h2>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          <div>
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center ">
+        <div className="flex justify-center items-center">
             <Image
               src="/about.jpg"
               alt="Taller de cerámica"
