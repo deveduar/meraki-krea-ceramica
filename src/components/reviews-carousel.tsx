@@ -1,10 +1,13 @@
-"use client"
 
-import { useState, useEffect } from "react"
 import { Card, CardContent, CardFooter } from "@/components/ui/card"
-import { Button } from "@/components/ui/button"
-import { ChevronLeft, ChevronRight, Star } from "lucide-react"
-
+import { Star } from "lucide-react"
+import {
+  Carousel,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
 // Mock reviews data
 const mockReviews = [
   {
@@ -45,106 +48,44 @@ const mockReviews = [
 ]
 
 const ReviewsCarousel = () => {
-  const [currentIndex, setCurrentIndex] = useState(0)
-  const [visibleReviews, setVisibleReviews] = useState<typeof mockReviews>([])
-
-  const itemsPerPage = {
-    mobile: 1,
-    tablet: 2,
-    desktop: 3,
-  }
-
-  useEffect(() => {
-    // Determine how many reviews to show based on screen size
-    const handleResize = () => {
-      const width = window.innerWidth
-      let itemsToShow = itemsPerPage.mobile
-
-      if (width >= 768) {
-        itemsToShow = itemsPerPage.tablet
-      }
-
-      if (width >= 1024) {
-        itemsToShow = itemsPerPage.desktop
-      }
-
-      const startIndex = currentIndex % mockReviews.length
-      const endIndex = startIndex + itemsToShow
-
-      // Handle wrapping around the array
-      let reviews = []
-      if (endIndex <= mockReviews.length) {
-        reviews = mockReviews.slice(startIndex, endIndex)
-      } else {
-        const firstPart = mockReviews.slice(startIndex)
-        const secondPart = mockReviews.slice(0, endIndex - mockReviews.length)
-        reviews = [...firstPart, ...secondPart]
-      }
-
-      setVisibleReviews(reviews)
-    }
-
-    handleResize()
-    window.addEventListener("resize", handleResize)
-
-    return () => {
-      window.removeEventListener("resize", handleResize)
-    }
-  }, [currentIndex])
-
-  const goToPrevious = () => {
-    setCurrentIndex((prevIndex) => (prevIndex === 0 ? mockReviews.length - 1 : prevIndex - 1))
-  }
-
-  const goToNext = () => {
-    setCurrentIndex((prevIndex) => (prevIndex + 1) % mockReviews.length)
-  }
 
   return (
-    <div className="relative min-h-[450px]">
-      <div 
-      className="flex overflow-hidden gap-4 ">
-        {visibleReviews.map((review) => (
-          <Card 
-          key={review.id} 
-          className="min-w-[300px] flex-1"
-          
-          >
-            <CardContent className="">
-              <div className="flex items-center mb-2">
-                {Array.from({ length: 5 }).map((_, i) => (
-                  <Star
-                    key={i}
-                    className={`h-5 w-5 ${i < review.rating ? "text-yellow-500 fill-yellow-500" : "text-gray-300"}`}
-                  />
-                ))}
-              </div>
-              <p className="text-sm text-muted-foreground mb-4">{review.date}</p>
-              <p className="mb-4">{review.text}</p>
-              <CardFooter className="p-0 ">
-              <p className="font-medium">{review.name}</p>
-
-              </CardFooter>
-            </CardContent>
-          </Card>
-        ))}
-      </div>
-
-      <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2">
-        <Button variant="outline" size="icon" onClick={goToPrevious} 
-          className="transition-transform duration-200 hover:scale-110"
-        aria-label="Anterior reseña">
-          <ChevronLeft className="h-4 w-4" />
-        </Button>
-        <Button variant="outline" size="icon" onClick={goToNext} 
-        className="transition-transform duration-200 hover:scale-110"
-        aria-label="Siguiente reseña">
-          <ChevronRight className="h-4 w-4" />
-        </Button>
-      </div>
-    </div>
+    <div className="relative ">
+    <Carousel className="w-full ">
+    <CarouselContent className="-ml-4">
+      {mockReviews.map((review) => (
+        <CarouselItem key={review.id} className="pl-4 md:basis-1/2 lg:basis-1/3">
+          <div className="p-1">
+            <Card>
+              <CardContent className="">
+                <div className="flex items-center mb-2">
+                  {Array.from({ length: 5 }).map((_, i) => (
+                    <Star
+                      key={i}
+                      className={`h-5 w-5 ${
+                        i < review.rating ? "text-yellow-500 fill-yellow-500" : "text-gray-300"
+                      }`}
+                    />
+                  ))}
+                </div>
+                <p className="text-sm text-muted-foreground mb-4">{review.date}</p>
+                <p className="mb-4">{review.text}</p>
+                <CardFooter className="p-0">
+                  <p className="font-medium">{review.name}</p>
+                </CardFooter>
+              </CardContent>
+            </Card>
+          </div>
+        </CarouselItem>
+      ))}
+    </CarouselContent>
+    <CarouselPrevious className="hidden md:flex" />
+    <CarouselNext className="hidden md:flex" />
+  </Carousel>
+  </div>
   )
 }
+
 
 export default ReviewsCarousel
 
