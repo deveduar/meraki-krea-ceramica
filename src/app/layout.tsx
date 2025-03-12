@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     siteName: "Merakikrea Cerámica",
     images: [
       {
-        url: "https://meraki-krea-ceramica-six.vercel.app/imagen-meta.jpg",
+        url: "https://meraki-krea-ceramica-six.vercel.app/hero-1.jpg",
         width: 1200,
         height: 630,
         alt: "Merakikrea Cerámica - Clases y Tienda",
@@ -43,7 +43,7 @@ export const metadata: Metadata = {
     title: "Merakikrea Cerámica | Clases y Tienda de Cerámica",
     description:
       "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
-    images: ["https://meraki-krea-ceramica-six.vercel.app/imagen-meta.jpg"],
+    images: ["https://meraki-krea-ceramica-six.vercel.app/hero-1.jpg"],
   },
   other: {
     ["fb:app_id"]: "656846786839931",
