@@ -71,6 +71,8 @@ export default function RootLayout({
           <link rel="manifest" href="/site.webmanifest" />
           <link rel="apple-touch-icon" sizes="192x192" href="/icons/icon-192x192.png" />
           <link rel="apple-touch-icon" sizes="512x512" href="/icons/icon-512x512.png" />
+          <link rel="icon" type="image/png" sizes="32x32" href="/icons/favicon-32x32.png"/>
+          <link rel="icon" type="image/png" sizes="16x16" href="/icons/favicon-16x16.png"/>
         </Head>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
