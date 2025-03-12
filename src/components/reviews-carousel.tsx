@@ -101,11 +101,11 @@ const ReviewsCarousel = () => {
   }
 
   return (
-    <div className="relative">
+    <div className="relative min-h-[450px]">
       <div className="flex overflow-hidden gap-4 ">
         {visibleReviews.map((review) => (
           <Card key={review.id} className="min-w-[300px] flex-1">
-            <CardContent className="pt-6">
+            <CardContent className="">
               <div className="flex items-center mb-2">
                 {Array.from({ length: 5 }).map((_, i) => (
                   <Star
@@ -125,7 +125,7 @@ const ReviewsCarousel = () => {
         ))}
       </div>
 
-      <div className="flex justify-center mt-6 gap-2">
+      <div className="absolute bottom-0 left-0 right-0 flex justify-center gap-2">
         <Button variant="outline" size="icon" onClick={goToPrevious} aria-label="Anterior reseña">
           <ChevronLeft className="h-4 w-4" />
         </Button>
