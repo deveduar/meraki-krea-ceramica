@@ -26,7 +26,8 @@ const GoogleMap = ({ address }: GoogleMapProps) => {
       iframe.allowFullscreen = true
       iframe.loading = "lazy"
       iframe.referrerPolicy = "no-referrer-when-downgrade"
-
+      iframe.title = "Ubicación en Google Maps"
+      iframe.ariaLabel = "Mapa interactivo mostrando la ubicación del taller"
       // Clear any existing content and append the iframe
       mapRef.current.innerHTML = ""
       mapRef.current.appendChild(iframe)

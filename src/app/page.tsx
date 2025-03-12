@@ -10,7 +10,7 @@ import WhatsAppButton from "@/components/whatsapp-button"
 
 export default function Home() {
   return (
-    <main className="min-h-screen">
+    <main className="min-h-screen" role="main" aria-label="Contenido principal" id="main-content">
       <Hero />
       <AboutUs />
       <Courses />
