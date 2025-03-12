@@ -7,6 +7,6 @@ export default function robots(): MetadataRoute.Robots {
       allow: '/',
       disallow: '/private/',
     },
-    sitemap: 'https://meraki-krea-ceramica-six.vercel.app',
+    sitemap: 'https://meraki-krea-ceramica-six.vercel.app/sitemap.xml',
   }
 }
