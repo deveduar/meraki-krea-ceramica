@@ -91,8 +91,8 @@ export default function Contact() {
             <Globe className="h-5 w-5" />
                 <h3 className="font-medium ">Redes Sociales</h3>
                 <div className="flex gap-4">
-                  <SocialButton href="https://instagram.com" icon={Instagram} label="Instagram" />
-                  <SocialButton href="https://facebook.com" icon={Facebook} label="Facebook" />
+                  <SocialButton href="https://instagram.com/merakikrea" icon={Instagram} label="Instagram" />
+                  <SocialButton href="https://www.facebook.com/merakikrea" icon={Facebook} label="Facebook" />
                 </div>
               </div>
             </CardFooter>

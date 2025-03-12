@@ -23,25 +23,25 @@ const mockReviews = [
   },
   {
     id: "3",
-    name: "Dedalo",
+    name: "Dedalo Publicidad Publicidad",
     rating: 5,
-    date: "Hace 1 semana",
+    date: "Hace una semana",
     text: "Compré una pieza de cerámica... una maravilla",
   },
-  // {
-  //   id: "4",
-  //   name: "Carlos Sánchez",
-  //   rating: 5,
-  //   date: "2 semanas atrás",
-  //   text: "Un lugar maravilloso para aprender cerámica. El trato es muy cercano y las piezas que se pueden hacer son preciosas.",
-  // },
-  // {
-  //   id: "5",
-  //   name: "Ana López",
-  //   rating: 5,
-  //   date: "1 mes atrás",
-  //   text: "Llevo varios meses asistiendo a clases y estoy encantada. He mejorado mucho y el ambiente es genial. Totalmente recomendable.",
-  // },
+  {
+    id: "4",
+    name: "Ester GV",
+    rating: 5,
+    date: "Hace 16 horas",
+    text: "Un espacio estupendo para aprender y realizar piezas de cerámica. Especial mención a las profes.",
+  },
+  {
+    id: "5",
+    name: "Jorge Fernández Avila",
+    rating: 5,
+    date: "Hace 17 horas",
+    text: "Las sesiones de cerámica son muy divertidas. Muchas herramientas, arcillas y consejos para sacar las ideas. Paqui y Yolanda son unas profes increíbles.",
+  },
 ]
 
 const ReviewsCarousel = () => {
