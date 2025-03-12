@@ -5,6 +5,7 @@ import "./globals.css";
 import { ThemeProvider } from "@/components/theme-provider"
 import Header from "@/components/header"
 import Footer from "@/components/footer"
+import Head from 'next/head';
 
 
 const inter = Inter({ subsets: ["latin"] })
@@ -45,9 +46,6 @@ export const metadata: Metadata = {
       "Descubre nuestros cursos de cerámica y tienda con piezas únicas hechas a mano en Aljaraque, Huelva.",
     images: ["https://meraki-krea-ceramica-six.vercel.app/hero-1.jpg"],
   },
-  other: {
-    ["fb:app_id"]: "2087657141752058",
-  },
 };
 
 
@@ -58,7 +56,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
+      
         <body className={inter.className}>
+        <Head>
+        <meta key="fb-app-id" property="fb:app_id" content="2087657141752058" />
+      </Head>
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem disableTransitionOnChange>
           <Header />
           {children}

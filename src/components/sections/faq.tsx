@@ -27,14 +27,14 @@ export default function FAQ() {
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-4">
-            <AccordionTrigger>¿Necesito reservar con antelación?</AccordionTrigger>
+            <AccordionTrigger className="cursor-pointer">¿Necesito reservar con antelación?</AccordionTrigger>
             <AccordionContent>
               Recomendamos reservar plaza para los cursos con antelación, ya que los grupos son reducidos para
               garantizar una atención personalizada.
             </AccordionContent>
           </AccordionItem>
           <AccordionItem value="item-5">
-            <AccordionTrigger>¿Puedo comprar piezas sin asistir a cursos?</AccordionTrigger>
+            <AccordionTrigger className="cursor-pointer">¿Puedo comprar piezas sin asistir a cursos?</AccordionTrigger>
             <AccordionContent>
               Sí, también funcionamos como tienda de cerámica donde puedes adquirir piezas únicas hechas por nuestros
               artistas o encargar diseños personalizados.
