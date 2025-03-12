@@ -63,7 +63,7 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="en">
+    <html lang="es">
         <Head>
           <meta key="fb-app-id" property="fb:app_id" content="2087657141752058" />
           <link rel="manifest" href="/site.webmanifest" />
