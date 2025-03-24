@@ -1,5 +1,4 @@
 ---
-id: 3
 title: "Merakikrea Cerámica"
 description: "A landing page inspired by Google Business Profile to showcase store information and facilitate easy contact."
 imageSrc: "https://i.postimg.cc/jqJdfFtB/iphone-meraki-mockup.webp"
